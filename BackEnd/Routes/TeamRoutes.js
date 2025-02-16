@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const Team = require("../models/Team"); // Import the Team model
+const Team = require("../models/Team");
 
-// ✅ GET: Fetch All Team Members
+
 router.get("/", async (req, res) => {
   try {
     const teamMembers = await Team.find().sort({ _id: -1 });
@@ -12,7 +12,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-// ✅ POST: Add a New Team Member (Admin Use)
+
 router.post("/", async (req, res) => {
   try {
     const { name, role, description, imageUrl } = req.body;
@@ -29,7 +29,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-// ✅ DELETE: Remove a Team Member (Admin Use)
+
 router.delete("/:id", async (req, res) => {
   try {
     const teamMember = await Team.findByIdAndDelete(req.params.id);

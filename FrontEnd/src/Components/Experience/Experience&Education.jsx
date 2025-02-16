@@ -114,20 +114,7 @@ export default function ExperienceEducation() {
         </div>
       </div>
 
-      {/* CSS for Flip effect */}
-      <style jsx>{`
-        .transform-gpu {
-          perspective: 1000px; /* This is necessary for 3D effects */
-        }
-
-        .transform-gpu:hover {
-          transform: rotateY(10deg);
-        }
-
-        .transform-gpu:active {
-          transform: rotateY(-5deg);
-        }
-      `}</style>
+     
     </section>
   );
 }

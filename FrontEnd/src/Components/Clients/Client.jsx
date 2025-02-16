@@ -86,17 +86,6 @@ export default function ClientStories() {
         </motion.div>
 
       </div>
-
-      <style jsx>{`
-        .slick-slide {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .slick-slide img {
-          object-fit: cover;
-        }
-      `}</style>
     </section>
   );
 }

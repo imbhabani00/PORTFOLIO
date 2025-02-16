@@ -3,7 +3,6 @@ const router = express.Router();
 const Contact = require("../Models/Contact");
 const nodemailer = require("nodemailer");
 
-// POST route to save and send message
 router.post("/", async (req, res) => {
   const { name, mobile, email, message } = req.body;
 
